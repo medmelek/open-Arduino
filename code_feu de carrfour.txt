@@ -1,0 +1,30 @@
+
+int led_rouge= 6; //déclaration de la numéro de pin du led rouge
+int led_orange=7;//déclaration de la numéro de pin du led orangé
+int led_vert=8;//déclaration de la numéro de pin du led vert
+void setup() {
+  // une fois l'arduino est démarrer ou bien elle é réfrichir(reste)
+  pinMode(led_rouge,OUTPUT); //Configuer le mode du led rouge , qui est en output
+  pinMode(led_orange,OUTPUT);//Configuer le mode du led orangé  , qui est en output
+  pinMode(led_vert,OUTPUT);//Configuer le mode du le vert , qui est en output
+
+}
+
+void loop() {
+  // ce code est en boucle tanque l'arduino est en marche
+
+digitalWrite(led_orange,HIGH); // allumer la led orangé
+delay(1000);                  // pendant 1 secand 
+digitalWrite(led_orange,LOW); // puis elle s'éteindre
+
+digitalWrite(led_rouge,HIGH);    // allumer la led rouge
+delay(3000);                    //pendat 3 secand
+digitalWrite(led_rouge,LOW);   // puis elle s'éteinde
+
+digitalWrite(led_vert,HIGH);  //allumer la led vert
+delay(3000);                 // pendant 3 secand
+digitalWrite(led_vert,LOW); // puis elle s'eteindre
+
+
+
+}
